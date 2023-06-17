@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 20px auto;
+  font-family: "Segoe UI Symbol";
+  font-family: "Segoe UI Emoji";
+  font-weight: 300;
+}
+
+form {
+  padding: 15px 25px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+form label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+input {
+  font-family: "Segoe UI Symbol";
+  font-family: "Segoe UI Emoji";
+}
+
+a {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#wrapper,
+#loginform {
+  margin: 0 auto;
+  padding-bottom: 25px;
+  background: #eee;
+  width: 600vmax;
+  max-width: 100%;
+  border: 2px solid #212121;
+  border-radius: 4vmax;
+}
+
+#loginform {
+  padding-top: 18px;
+  text-align: center;
+}
+
+#loginform p {
+  padding: 15px 25px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#chatbox {
+  text-align: left;
+  background: #fff;
+  height: 35vmax;
+  width: 100vmax;
+  overflow: auto;
+  border-radius: 1vmax;
+}
+
+#usermsg {
+  flex: 1;
+  border-radius: 4vmax;
+  border: 1px solid #147EFB;
+  padding: 1px 12px;
+
+}
+
+#name {
+  border-radius: 4vmax;
+  border: 1px solid #147EFB;
+  padding: 2px 8px;
+}
+
+#submitmsg,
+#enter {
+  background: #147EFB;
+  border: 2px solid #147EFB;
+  color: white;
+  padding: 4px 10px;
+  font-weight: bold;
+  border-radius: 4vmax;
+}
+
+.error {
+  color: rgb(255, 0, 0);
+  ;
+}
+
+#menu {
+  padding: 15px 25px;
+  display: flex;
+}
+
+#menu p.welcome {
+  flex: 1;
+}
+
+a#exit {
+  color: white;
+  background: rgb(255, 0, 0);
+  ;
+  padding: 4px 8px;
+  border-radius: 4vmax;
+  font-weight: bold;
+}
+
+.msgln {
+  border-radius: 4vmax;
+  background: #147EFB;
+  color: black;
+  display: inline;
+  line-height: 3;
+  padding: 1vmin;
+}
+
+.msgln span.left-info {
+  border-radius: 4vmax;
+  background: rgb(255, 0, 0);
+  color: #ffffff;
+  display: inline;
+  line-height: 3;
+  font-size: large;
+  padding: 1vmin 2vmin;
+}
+
+.msgln span.chat-time {
+  color: rgb(0, 0, 0);
+  font-size: 60%;
+  vertical-align: top;
+  font-weight: bold;
+  padding: 2px;
+}
+
+.msgln b.user-name {
+  font-weight: bold;
+  background: #147EFB;
+  color: #ffffff;
+  padding: 2 2vmin;
+  font-size: 90%;
+  border-radius: 3vmin;
+  margin-left: 0 5px 0 0;
+}
+
+.msgln b.user-name-left {
+  background: rgb(255, 0, 0);
+  color: #ffffff;
+  border-radius: 4vmax;
+  line-height: 3;
+  padding: 1vmin;
+}
+
+body {
+  background-color: black;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+::-moz-selection {
+  background-color: transparent;
+  color: #000;
+}
+
+::selection {
+  background-color: transparent;
+  color: #000;
+}
+
+.form-control {
+  display: block;
+  width: 20vmax;
+  height: 34px;
+  padding: 1px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #147EFB;
+  border-radius: 4vmax;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.btn {
+  background: #147EFB;
+  border: 2px solid #147EFB;
+  color: white;
+  padding: 4px 10px;
+  font-weight: bold;
+  border-radius: 4vmax;
+}
+
+.btn-default {
+  color: #333;
+  background-color: #147EFB;
+  border-color: #147EFB;
+}
+
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #999;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #999;
+}
+
+.form-control::-ms-expand {
+  border: 0;
+  background-color: transparent;
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  background-color: #eeeeee;
+  opacity: 1;
+}
+
+.form-control[disabled],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+}
+
+textarea.form-control {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+  input[type="date"].form-control,
+  input[type="time"].form-control,
+  input[type="datetime-local"].form-control,
+  input[type="month"].form-control {
+    line-height: 34px;
+  }
+}
