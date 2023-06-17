@@ -67,9 +67,34 @@ function loginForm(){
   </div>
   <script src="./jquery.min.js"></script>
   <script src="./emoji.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+      var picker = new EmojiButton();
+      var button = document.querySelector('#emoji-button');
+      button.addEventListener('click', function () {
+        picker.showPicker(button);
+        picker.on('emoji', emoji => {
+          document.querySelector('#usermsg').value += emoji;
+        });
+      });
+    });
+  </script>
   <script>
     // jQuery Document 
     $(document).ready(function () {
+      $("#submitmsg").click(function () {
+        var clientmsg = $.trim($("#usermsg").val());
+        if (clientmsg.length >= 1) { // Prevents Spamming the Enter Key
+          $.post("post.php", {
+            text: clientmsg
+          });
+          $("#usermsg").val("");
+        } else {
+
+        }
+        return false;
+      });
+
       $("#submitmsg").click(function () {
         var clientmsg = $("#usermsg").val();
         $.post("./post.php", {
