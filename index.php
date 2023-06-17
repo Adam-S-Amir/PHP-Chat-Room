@@ -35,6 +35,7 @@ function loginForm(){
 <head>
   <meta charset="utf-8" />
   <title>Chat Room</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
   <meta name="description" content="Chat Room" />
   <link rel="stylesheet" href="./style.css" />
 </head>
